@@ -1,7 +1,6 @@
-﻿namespace DevFreela.Payments.API.Services
+﻿namespace DevFreela.Payments.API.Services;
+
+public interface IPaymentService
 {
-    public interface IPaymentService
-    {
-        Task<bool> ProcessPaymentAsync(PaymentInfoInputModel payment);
-    }
+    Task<bool> ProcessPaymentAsync(PaymentInfoInputModel payment);
 }
